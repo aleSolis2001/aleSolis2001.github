@@ -55,6 +55,7 @@ h1 {
 
 #grid {
   text-align: center;
+  margin-top: 5px
 }
 
 .row {
@@ -63,12 +64,16 @@ h1 {
 
 span {
   border: 1px solid #fff;
+  font-size: 20px;
   padding: 8px;
   margin: 4px;
   min-width: 20px;
   text-align: center;
   display: inline-block;
   border-radius: 4px;
+}
+span[style*="background-color: yellow;"] {
+  color: #000;
 }
 
 #win-message,
@@ -127,4 +132,5 @@ footer {
 }
 footer p{
   margin: 2px;
+}
 }
