@@ -13,7 +13,7 @@ function intentar(){
     console.log(word)
     let intento = input.value.toUpperCase().replace(/ /g, '');
 
-    if(intento.length !== 5 || intento.includes(" ")) {
+    if(!/^[A-Z]+$/.test(intento) || intento.length !== 5 || intento.includes(" ")) {
         document.getElementById("error").classList.remove("hidden")
         return false
     }else document.getElementById("error").classList.add("hidden")
